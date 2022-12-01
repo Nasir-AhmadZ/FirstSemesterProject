@@ -1,9 +1,21 @@
 
-.Top{
-float: right;
-padding: 6px;
-border: none;
-margin-top: 8px;
-margin-right: 16px;
-font-size: 17px;
+.Top input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+.center{
+    position:absolute;
+    display:block;
+    height:100px;
+    width:100%;
+    left:50%;
+    top:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+    line-height: 100px;
+    font-size: 20px;
 }
