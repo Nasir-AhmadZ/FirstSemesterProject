@@ -12,7 +12,7 @@
     display:block;
     height:100px;
     width:50%;
-    left:50%;
+    left:40%;
     top:50%;
     margin-top:-50px;
     margin-left:-50px;
@@ -21,6 +21,7 @@
 }
 
 .images{
-    padding-top: 8%;
+    margin-top: 10%;
+    border-spacing: 100px;
     float:left;
 }
