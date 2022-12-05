@@ -22,6 +22,40 @@
 
 .images{
     margin-top: 10%;
-    border-spacing: 100px;
     float:left;
+}
+
+.product{
+    position:absolute;
+    float:left;
+    min-height: 500px;
+    min-width: 40%;
+    background-color: blue;
+    line-height:500px; 
+    text-align: center;
+}
+
+.price{
+   
+    float: right;
+    min-height: 100px;
+    min-width: 60%;
+    line-height: 100px;
+    text-align: center;
+    background-color: yellowgreen;
+
+}
+
+.description{
+    float: right;
+    min-height: 400px;
+    min-width: 60%;
+    line-height: 400px;
+    text-align: center;
+    background-color: green;
+
+}
+
+.main-page{
+    margin-left: 8%;
 }
