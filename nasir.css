@@ -1,10 +1,10 @@
 
 .Top input[type=text]{
-    float: right;
+    float: left;
     padding: 6px;
     border: none;
-    margin-top: 8px;
-    margin-right: 16px;
+    margin-top:1%;
+    margin-left:42%;
     font-size: 17px;
 }
 .center{
