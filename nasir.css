@@ -31,29 +31,26 @@
     min-height: 100%;
     max-height: 100%;
     min-width: 40%;
-    background-color: blue;
-    line-height:500px; 
     text-align: center;
 }
 
 .price{
     float: right;
-    min-height: 20%;
-    min-width: 60%;
-    max-width: 60%;
-    line-height: 100px;
-    text-align: center;
-    background-color: yellowgreen;
+    min-height: 200px;
+    min-width: 54.45%;
+    padding-left: 2%;
+    font: "Noto-Sans", Tahoma, sans-serif;
+    font-size: 1.625rem;
 
 }
 
 .description{
     float: right;
-    min-height: 40%;
-    min-width: 60%;
-    line-height: 400px;
-    text-align: center;
-    background-color: green;
+    padding-left: 2%;
+    min-height: 400px;
+    min-width: 54.45%;
+    font: "Noto-Sans", Tahoma, sans-serif;
+    font-size: 1.625rem;
 
 }
 
