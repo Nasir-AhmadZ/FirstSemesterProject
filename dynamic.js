@@ -51,6 +51,7 @@ function switch1(tree)
     }
 }
 
+
 function if1(y)
 {
     if (y == 1)
@@ -72,3 +73,10 @@ document.getElementById("des3").innerHTML= "$";
 document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
 document.getElementById("des4").innerHTML= "";
 document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
+
+let item1 = 0;
+const price=[0,1,2,3]
+for (i = 0;i<price.length;i++)
+{
+    
+}
