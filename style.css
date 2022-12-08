@@ -40,3 +40,7 @@ a:active{
     color: darkblue;
     text-decoration: none;
 }
+td{
+    text-align: center;
+    font-weight: bold;
+}
