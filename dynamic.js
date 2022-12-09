@@ -37,14 +37,13 @@ function quantity(x)
 document.getElementById("total").innerHTML= "TOTAL:"+"$"+" "+total(quantity(250.00),quantity(76),quantity(54),quantity(67));
 function switch1(tree)
 {
-    const items=['tree', 'jumper', 'shovel', 'PS5'];
     switch (tree)
     {
         case tree:
            return 250;
         break;
         case 'jumper':
-            document.getElementById("des2").innerHTML= "$";
+            document.getElementById("des2")
             document.getElementById("item2").innerHTML= "$"+" "+quantity(76);
         break;
         case 'shovel':
@@ -80,15 +79,3 @@ document.getElementById("des3").innerHTML= "$";
 document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
 document.getElementById("des4").innerHTML= "";
 document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
-
-let item1 = 0;
-const price=[0,1,2,3]
-for (i = 0;i<price.length;i++)
-{
-    
-}
-
-function pain()
-{
-    
-}
