@@ -20,10 +20,7 @@
     height: 8%;
     line-height: 40px;
 }
-th{
-    color: white;
-    background-color: black;
-}
+
 a:link{
     color: white;
     text-decoration: none;
@@ -39,8 +36,4 @@ a:hover{
 a:active{
     color: darkblue;
     text-decoration: none;
-}
-td{
-    text-align: center;
-    font-weight: bold;
 }

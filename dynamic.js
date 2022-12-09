@@ -87,3 +87,8 @@ for (i = 0;i<price.length;i++)
 {
     
 }
+
+function pain()
+{
+    
+}
