@@ -37,3 +37,11 @@ a:active{
     color: darkblue;
     text-decoration: none;
 }
+.top2{
+    position:absolute;top:0;
+    background-color: black;
+    width: 100%;
+    height: 8%;
+    line-height: 40px;
+}
+
