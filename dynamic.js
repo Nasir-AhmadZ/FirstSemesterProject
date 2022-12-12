@@ -43,11 +43,11 @@ function quantity(x)
             {
                 sum_1 += x;
             }
-            return sum_1;
+            alert(sum_1);
         }
         else
         {
-            return x;
+            alert(x);
         }
     }
     else if(x == 54)
@@ -86,12 +86,13 @@ function quantity(x)
 
 //change money symbol and enter prices
 //document.getElementById("total").innerHTML= "TOTAL:"+"$"+" "+total(quantity(250.00),quantity(7.00),quantity(54),quantity(67));
-/*document.getElementById("des1").innerHTML= "$";//Add product desription here
+document.getElementById("des1").innerHTML= "$";//Add product desription here
 document.getElementById("item1").innerHTML= "$"+" "+quantity(250.00);
 document.getElementById("des2").innerHTML= "$";
+document.getElementById("item3").innerHTML= "$"+" "+quantity(7.00);
 document.getElementById("des3").innerHTML= "$";
 document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
 document.getElementById("des4").innerHTML= "";
-document.getElementById("item4").innerHTML= "$"+" "+quantity(67);*/
+document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
 
 
