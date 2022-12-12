@@ -1,0 +1,66 @@
+
+.Top input[type=text]{
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top:1%;
+    margin-left:42%;
+    font-size: 17px;
+}
+.center{
+    position:absolute;
+    display:block;
+    height:100px;
+    width:50%;
+    left:40%;
+    top:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+    line-height: 100px;
+    font-size: 20px;
+}
+
+.images{
+    margin-top: 10%;
+    float:left;
+}
+
+.product{
+    position:absolute;
+    float:left;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 40%;
+    text-align: center;
+}
+
+.price{
+    float: right;
+    min-height: 200px;
+    min-width: 54.45%;
+    padding-left: 2%;
+    font: "Noto-Sans", Tahoma, sans-serif;
+    font-size: 1.625rem;
+
+}
+
+.description{
+    float: right;
+    padding-left: 2%;
+    min-height: 400px;
+    min-width: 54.45%;
+    font: "Noto-Sans", Tahoma, sans-serif;
+    font-size: 1.625rem;
+
+}
+
+.order-details{
+    float: right;
+    min-height: 40%px;
+    min-width: 60%;
+    line-height: 400px;
+    text-align: center;
+    background-color: purple;
+
+}
+
