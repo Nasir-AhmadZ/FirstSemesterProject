@@ -14,68 +14,85 @@ function total(x , y, z, w)
 {
    return x + y + z + w;
 }
-
-//this is for quantity adding  
+//this is for quantity adding  currently only works for alerts
 function quantity(x)
 {
-    var i, sum_1 = 0, Quantity = 5; //input for quantity needed
-    if (Quantity > 1)
+    var i, sum_1 = 0;
+    if(x == 250)
     {
-        for (i = 0;i < Quantity;i++)
+        var treeQuantity = document.getElementById("Q1").value;
+        if (treeQuantity > 1)
         {
-            sum_1 += x;
+            for (i = 0;i < treeQuantity;i++)
+            {
+                sum_1 += x;
+            }
+            return sum_1;
         }
-        return sum_1;
+        else
+        {
+            return x;
+        }
     }
-    else
+    else if(x == 7)
     {
-        return x;
+        var shovelQuantity = document.getElementById("Q2").value;
+        if (shovelQuantity > 1)
+        {
+            for (i = 0;i < shovelQuantity;i++)
+            {
+                sum_1 += x;
+            }
+            alert(sum_1);
+        }
+        else
+        {
+            alert(x);
+        }
+    }
+    else if(x == 54)
+    {
+        var PS5Quantity = document.getElementById.value("Q3");
+        if (PS5Quantity > 1)
+        {
+            for (i = 0;i < PS5Quantity;i++)
+            {
+                sum_1 += x;
+            }
+            document.getElementById("item2")=sum_1;
+        }
+        else
+        {
+            document.getElementById("item2")= x;
+        }
+    }
+    else if(x == 67)
+    {
+        var jumperQuantity = document.getElementById.value("Q4");
+        if (jumperQuantity > 1)
+        {
+            for (i = 0;i < jumperQuantity;i++)
+            {
+                sum_1 += x;
+            }
+            return sum_1;
+        }
+        else
+        {
+            return x;
+        }
     }
 }
 
 //change money symbol and enter prices
-document.getElementById("total").innerHTML= "TOTAL:"+"$"+" "+total(quantity(250.00),quantity(76),quantity(54),quantity(67));
-function switch1(tree)
-{
-    const items=['tree', 'jumper', 'shovel', 'PS5'];
-    switch (tree)
-    {
-        case tree:
-           return 250;
-        break;
-        case 'jumper':
-            document.getElementById("des2").innerHTML= "$";
-            document.getElementById("item2").innerHTML= "$"+" "+quantity(76);
-        break;
-        case 'shovel':
-            document.getElementById("des3").innerHTML= "$";
-            document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
-        break;
-        case 'PS5':
-            document.getElementById("des4").innerHTML= "";
-            document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
-        break;
-    }
-}
-
-function if1(y)
-{
-    if (y == 1)
-    {
-       return "item1";
-    }
-    else if (y ==2)
-    {
-        document.getElementById("des2").innerHTML= "$";
-        document.getElementById("item2").innerHTML= "$"+" "+quantity(76);
-    }
-}
-
+//document.getElementById("total").innerHTML= "TOTAL:"+"$"+" "+total(quantity(250.00),quantity(7.00),quantity(54),quantity(67));
 document.getElementById("des1").innerHTML= "$";//Add product desription here
-document.getElementById("item1").innerHTML= "$"+" "+quantity(250);
+document.getElementById("item1").innerHTML= "$"+" "+quantity(250.00);
 document.getElementById("des2").innerHTML= "$";
-document.getElementById("item2").innerHTML= "$"+" "+quantity(76);
+document.getElementById("item3").innerHTML= "$"+" "+quantity(7.00);
 document.getElementById("des3").innerHTML= "$";
 document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
 document.getElementById("des4").innerHTML= "";
 document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
+
+

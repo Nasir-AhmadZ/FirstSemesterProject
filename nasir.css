@@ -26,6 +26,7 @@
 }
 
 .product{
+    margin-top: 5%;
     position:absolute;
     float:left;
     min-height: 100%;
@@ -45,6 +46,7 @@
 }
 
 .description{
+    margin-top: 5%;
     float: right;
     padding-left: 2%;
     min-height: 400px;
