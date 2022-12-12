@@ -17,7 +17,8 @@ function total(x , y, z, w)
 //this is for quantity adding  currently only works for alerts
 function quantity(x)
 {
-    var i, sum_1 = 0;
+    let i;
+    var sum_1 = 0;
     if(x == 250)
     {
         var treeQuantity = document.getElementById("Q1").value;
@@ -27,7 +28,7 @@ function quantity(x)
             {
                 sum_1 += x;
             }
-            return sum_1;
+            console.log(sum_1);
         }
         else
         {
@@ -43,7 +44,8 @@ function quantity(x)
             {
                 sum_1 += x;
             }
-            alert(sum_1);
+            document.getElementById("item1").innerHTML = sum_1;
+            
         }
         else
         {
@@ -96,3 +98,4 @@ document.getElementById("des4").innerHTML= "";
 document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
 
 
+console.log("$"+" "+quantity(250));
