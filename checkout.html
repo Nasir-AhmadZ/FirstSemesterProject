@@ -5,73 +5,70 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="natty.css">
     <style>
-    th{
-    color: white;
-    background-color: black;
-    }
-    td{
-    text-align: center;
+    td, p{
     font-weight: bold;
     }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Your Order</h1>
-        <table border="0" cellspacing="0" cellpadding="0" length="100%" width="100%">
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Amount</th>
-            <tr>
-            <!--link product below using java-->
-                <td id="des1"></td>
-            <!--link quantity below using java-->
-                <td id="Quantity1"></td>
-            <!--link amount below using java-->
-                <td id="item1"></td>
-            </tr>
-            <tr>
-                <td id="des2"></td>
-                <td></td>
-                <td id="item2"></td>
-            </tr>
-            <tr>
-                <td id="des3"></td>
-                <td></td>
-                <td id="item3"></td>
-            </tr>
-            <tr>
-                <td id="des4"></td>
-                <td></td>
-                <td id="item4"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td id="total"></td>
-            </tr>
-        </table>
-    </div>
-
-    <button style=float:right;background-color:red;color:white;><a href="pay.html">Proceed to Checkout</a></button>
     <div class="col-25">
         <div class="container">
-          <h4>Cart
+          <h2>Your Order
             <span class="price" style="color:black">
               <i class="fa fa-shopping-cart"></i>
               <b>4</b>
             </span>
           </h4>
-          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-          <hr>
-          <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-        </div>
+    <div>
+        <table border="0" cellspacing="0" cellpadding="20" length="100%" width="100%">
+            <th style="text-align:left;font-size: 18px;"><u>Product</u></th>
+            <th style="font-size: 18px"><u>Quantity</u></th>
+            <th style="text-align:right;font-size: 18px;"><u>Amount</u></th>
+            <tr>
+            <!--link product below using java-->
+                <td style="text-align:left" id="des1"></td>
+            <!--link quantity below using java-->
+                <td id="Quantity1"> 
+                    <input type="textbox" id="Q1" value="0"/>
+                    <input type="button" value="Add" onclick="quantity(250)"/>
+                </td>
+            <!--link amount below using java-->
+                <td id="item1" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td style="text-align:left" id="des2"></td>
+                <td>
+                    <input type="textbox" id="Q2" value="0"/>
+                    <input type="button" value="Add" onclick="quantity(7)"/>
+                </td>
+                <td id="item2" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td style="text-align:left" id="des3"></td>
+                <td>                    
+                    <input type="textbox" id="Q3" value="0"/>
+                    <input type="button" value="Add" onclick="quantity(54)"/>
+                </td>
+                <td id="item3" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td style="text-align:left" id="des4"></td>
+                <td>                    
+                    <input type="textbox" id="Q4" value="0"/>
+                    <input type="button" value="Add" onclick="quantity(67)"/>
+                </td>
+                <td id="item4" style="text-align:right"></td>
+            </tr>
+        </table>
+        <hr>
+        <p>Total <span class="price" style="color:black"id="total"></span></p>
       </div>
     </div>
+  </div>
+    </div>
+    <button style=width:100%;float:right;background-color:red;color:white;><a href="pay.html">Proceed to Checkout</a></button>
    
     <script src="dynamic.js"></script>
 </body>
 </html>
+
