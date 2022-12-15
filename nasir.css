@@ -25,37 +25,50 @@
     float:left;
 }
 
+
+#main{
+    min-height: 100%;
+    min-width: 100%;
+}
+#right-side{
+    float: right;
+    background-color:rgb(193, 225, 193);
+    margin-top: 7%;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 45%;
+    min-width: 45%;
+    font: "Noto-Sans", Tahoma, sans-serif;
+    font-size: 1.625rem;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    border-radius: 25px;
+
+}
 .product{
     margin-top: 5%;
     position:absolute;
     float:left;
     min-height: 100%;
     max-height: 100%;
-    min-width: 40%;
+    min-width: 50%;
+    max-width: 50%;
     text-align: center;
 }
 
-.price{
-    float: right;
-    min-height: 200px;
-    min-width: 54.45%;
-    padding-left: 2%;
-    font: "Noto-Sans", Tahoma, sans-serif;
-    font-size: 1.625rem;
-
-}
-
 .description{
-    margin-top: 5%;
-    float: right;
-    padding-left: 2%;
-    min-height: 400px;
-    min-width: 54.45%;
-    font: "Noto-Sans", Tahoma, sans-serif;
-    font-size: 1.625rem;
+    min-height: 100%;
+    min-width: 50%;
 
 }
+.price{
+    margin-top: 50%;
+    line-height: 100%;
+    min-height: 200%;
 
+}
 .order-details{
     float: right;
     min-height: 40%px;
@@ -65,4 +78,5 @@
     background-color: purple;
 
 }
+
 
