@@ -26,7 +26,7 @@
 }
 
 
-#main{
+.main{
     min-height: 100%;
     min-width: 100%;
 }
@@ -48,7 +48,7 @@
 
 }
 .product{
-    margin-top: 5%;
+    margin-top: 7%;
     position:absolute;
     float:left;
     min-height: 100%;
@@ -76,6 +76,23 @@
     line-height: 400px;
     text-align: center;
     background-color: purple;
+
+}
+#right-side2{
+    float: right;
+    background-color:rgb(237, 84, 112);
+    margin-top: 7%;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 45%;
+    min-width: 45%;
+    font: "Noto-Sans", Tahoma, sans-serif;
+    font-size: 1.625rem;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    border-radius: 25px;
 
 }
 

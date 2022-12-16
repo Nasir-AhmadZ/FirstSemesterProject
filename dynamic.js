@@ -59,7 +59,7 @@ function quantity(x)
             document.getElementById("item2").innerHTML= "$"+" "+x;
         }
     }
-    else if(x == 54)
+    else if(x == 850)
     {
         var PS5Quantity = document.getElementById("Q3").value;
         if (PS5Quantity > 1)
@@ -80,7 +80,7 @@ function quantity(x)
             document.getElementById("item3").innerHTML= "$"+" "+x;
         }
     }
-    else if(x == 67)
+    else if(x == 34)
     {
         var jumperQuantity = document.getElementById("Q4").value;
         if (jumperQuantity > 1)
@@ -108,17 +108,12 @@ document.getElementById("des2").innerHTML= "The Halfords Snow Shovel, with a hei
 document.getElementById("des3").innerHTML= "Pink Sequin Embellished Christmas Puddings Jumper";
 document.getElementById("des4").innerHTML= "";
 
-document.getElementById("total").innerHTML="$"+" "+parseInt(quantity(250)+quantity(7)+quantity(54)+quantity(67));
+document.getElementById("total").innerHTML="$"+" "+parseInt(quantity(250)+quantity(7)+quantity(850)+quantity(34));
 function total(x,y,z,w)
 {
-    x = document.getElementById("Q1").value;
-    y = document.getElementById("Q2").value;
-    z = document.getElementById("Q3").value;
-    w = document.getElementById("Q4").value;
-    if (x == 0)
-    (
-        document.getElementById("total").innerHTML= document.getElementById("item2").value+document.getElementById("item2").value
-    )
+    var x = document.getElementById("Q1").value;
+    document.getElementById("total").innerHTML= parseInt(quantity(250)+quantity(7)+quantity(850)+quantity(34))
+
 }
 
 {
