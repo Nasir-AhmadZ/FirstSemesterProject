@@ -28,13 +28,7 @@
 
 .main{
     min-height: 100%;
-<<<<<<< HEAD
-    max-height: 100%;
-    width: 47%;
-    text-align: center;
-=======
     min-width: 100%;
->>>>>>> ac6b4bccca7cb827c6692f09013764609108855e
 }
 #right-side{
     float: right;
@@ -82,7 +76,16 @@
     line-height: 400px;
     text-align: center;
     background-color: purple;
+}
 
+.bottom-right{
+    float: right;
+    min-height: 180px;
+    width: 54.5%;
+    padding-left: 2%;
+    font: "Noto-Sans", Tahoma, sans-serif;
+    font-size: 1.625rem;
+    background-color: darkgray;
 }
 #right-side2{
     float: right;
@@ -103,3 +106,25 @@
 }
 
 
+.top-right{
+    margin-top: 5%;
+    float: right;
+    padding-left: 2%;
+    min-height: 700px;
+    width: 52%;
+    font: Arial;
+    font-size: 1.625rem;
+    background-color: black;
+    border-radius: 1%;
+    color: gainsboro;
+}
+.playstation{
+    margin-top: 5%;
+    position:absolute;
+    float:left;
+    min-height: 50%;
+    max-height: 100%;
+    width: 47%;
+    text-align: center;
+    border-radius: 4%;
+}
