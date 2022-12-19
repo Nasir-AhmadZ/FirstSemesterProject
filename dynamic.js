@@ -106,7 +106,7 @@ function quantity(x)
 document.getElementById("des1").innerHTML= "7ft Decorated Tree Red & Gold Christmas Tree.";//Add product desription here
 document.getElementById("des2").innerHTML= "The Halfords Snow Shovel, with a height of 82cm.";
 document.getElementById("des3").innerHTML= "Pink Sequin Embellished Christmas Puddings Jumper";
-document.getElementById("des4").innerHTML= "";
+document.getElementById("des4").innerHTML= "Sony PlayStation 5";
 
 function total(){
     var Total = (document.getElementById("Q1").value*250)+(document.getElementById("Q2").value*7)+(document.getElementById("Q3").value*34)+
