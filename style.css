@@ -41,5 +41,11 @@ td{
     text-align: center;
     font-weight: bold;
 }
+.main-div{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
 
 
