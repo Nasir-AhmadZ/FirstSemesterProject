@@ -59,7 +59,7 @@ function quantity(x)
             document.getElementById("item2").innerHTML= "$"+" "+x;
         }
     }
-    else if(x == 54)
+    else if(x == 34)
     {
         var PS5Quantity = document.getElementById("Q3").value;
         if (PS5Quantity > 1)
@@ -80,7 +80,7 @@ function quantity(x)
             document.getElementById("item3").innerHTML= "$"+" "+x;
         }
     }
-    else if(x == 67)
+    else if(x == 850)
     {
         var jumperQuantity = document.getElementById("Q4").value;
         if (jumperQuantity > 1)
@@ -108,33 +108,13 @@ document.getElementById("des2").innerHTML= "The Halfords Snow Shovel, with a hei
 document.getElementById("des3").innerHTML= "Pink Sequin Embellished Christmas Puddings Jumper";
 document.getElementById("des4").innerHTML= "";
 
-document.getElementById("total").innerHTML="$"+" "+parseInt(quantity(250)+quantity(7)+quantity(54)+quantity(67));
-function total(x,y,z,w)
-{
-    x = document.getElementById("Q1").value;
-    y = document.getElementById("Q2").value;
-    z = document.getElementById("Q3").value;
-    w = document.getElementById("Q4").value;
-    if (x == 0)
-    (
-        document.getElementById("total").innerHTML= document.getElementById("item2").value+document.getElementById("item2").value
-    )
+function total(){
+    var Total = (document.getElementById("Q1").value*250)+(document.getElementById("Q2").value*7)+(document.getElementById("Q3").value*34)+
+    (document.getElementById("Q4").value*850);
+    document.getElementById("total").innerHTML="$"+" "+Total;
 }
 
-{
-    if(x == 1)
-    {
-        document.getElementById("item1").style="display:block";
-    }
-}
-//change money symbol and enter prices
-//document.getElementById("total").innerHTML= "TOTAL:"+"$"+" "+total(quantity(250.00),quantity(7.00),quantity(54),quantity(67));
 
-
-/*document.getElementById("item1").innerHTML= "$"+" "+quantity(250.00);
-document.getElementById("item2").innerHTML= "$"+" "+quantity(7.00);
-document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
-document.getElementById("item4").innerHTML= "$"+" "+quantity(67);*/
 
 
 

@@ -22,7 +22,7 @@
     <div>
         <table border="0" cellspacing="0" cellpadding="20" length="100%" width="100%">
             <th style="text-align:left;font-size: 18px;"><u>Product</u></th>
-            <th style="font-size: 18px"><u>Quantity</u></th>
+            <th style="font-size: 18px;text-align: left;"><u>Quantity</u></th>
             <th style="text-align:right;font-size: 18px;"><u>Amount</u></th>
             <tr>
             <!--link product below using java-->
@@ -30,7 +30,7 @@
             <!--link quantity below using java-->
                 <td id="Quantity1"> 
                     <input type="textbox" id="Q1" value="0"/>
-                    <input type="button" value="Add" onclick="quantity(250)"/>
+                    <input type="button" value="Add" onclick="quantity(250),total()"/>
                 </td>
             <!--link amount below using java-->
                 <td id="item1" style="text-align:right"></td>
@@ -39,7 +39,7 @@
                 <td style="text-align:left" id="des2"></td>
                 <td>
                     <input type="textbox" id="Q2" value="0"/>
-                    <input type="button" value="Add" onclick="quantity(7)"/>
+                    <input type="button" value="Add" onclick="quantity(7),total()"/>
                 </td>
                 <td id="item2" style="text-align:right"></td>
             </tr>
@@ -47,7 +47,7 @@
                 <td style="text-align:left" id="des3"></td>
                 <td>                    
                     <input type="textbox" id="Q3" value="0"/>
-                    <input type="button" value="Add" onclick="quantity(54)"/>
+                    <input type="button" value="Add" onclick="quantity(34),total()"/>
                 </td>
                 <td id="item3" style="text-align:right"></td>
             </tr>
@@ -55,7 +55,7 @@
                 <td style="text-align:left" id="des4"></td>
                 <td>                    
                     <input type="textbox" id="Q4" value="0"/>
-                    <input type="button" value="Add" onclick="quantity(67)"/>
+                    <input type="button" value="Add" onclick="quantity(850),total()"/>
                 </td>
                 <td id="item4" style="text-align:right"></td>
             </tr>
@@ -66,7 +66,7 @@
     </div>
   </div>
     </div>
-    <button style=width:100%;float:right;background-color:red;color:white;><a href="pay.html">Proceed to Checkout</a></button>
+    <button style=border-radius:0;width:98%;margin-right:1%;float:right;background-color:red;color:white;><a href="pay.html">Proceed to Checkout</a></button>
    
     <script src="dynamic.js"></script>
 </body>
