@@ -7,9 +7,17 @@
     <title>christmas jumper</title>
     <link rel="stylesheet" href="natty.css">
     <link rel="icon" href="https://pyxpa.cdn.setuix.net/resources/blog/1-1604670432.jpg"> 
-
-    <h6> Pink Sequin Embellished Christmas Puddings Jumper </h6>
-    
+<body>
+    <!--Pink Sequin Embellished Christmas Puddings Jumper-->
+    <div class="Top">
+      <p style=float:right><button style=background-color:white><a href="checkout.html"target="_self">To Cart</a></button></p>
+      <div>
+          <img style="margin-top: 0.8%;" src="tree-images/search.png" width="40" height="40">
+          <input type="text" placeholder="Search.." id="searchInput">
+      </div>
+      
+  </div>
+<div id="jumperslide">
   <div class="container">
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
@@ -55,97 +63,98 @@
     </div>
   
   </div>
-<p><strong>£34</strong></p>
-<p>Size (EU) <br>
-  <div id=button title="choose size">
-  <button onclick="myButton()">S(36)</button>   <button onclick="myButton()">M(38)</button>   <button onclick="myButton()">L(40/42)</button>   <button onclick="myButton()">XL(44)</button> </p>
-  <button id="cart"></button>
+
+
+ <div id="sidepart">
+ 
+    <p id="green"><b>UP TO 50% OFF</b></p>
+   <p> Pink Sequin Embellished Christmas<br> Puddings Jumper<br><br><strong style="color: red;">£34.49</strong><del style="color:black"><e>£45.00</e></del></p>
+<!--choosing size-->
+
+
+<div id="part">
+
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">choose size(EU):</option>
+    <option value="1">XS </option>
+    <option value="2">S </option>
+    <option value="3">M </option>
+    <option value="4">L </option>
+    <option value="5">XL </option>
+    <option value="6">XXL</option>
+   
+  </select>
+ </div>
+ <div id="popup">
+  <u onclick="myFunction()">size guide</u>
+  
+     <table id="sizetable">
+      <tr>
+        <th><b>Size</b></th>
+        <th><b>XS</b></th>
+        <th><b>S</b></th>
+        <th><b>M</b></th>
+        <th><b>L</b></th>
+        <th><b>XL</b></th>
+        <th><b>XXL</b></th>
+      </tr>
+      <tr>
+        <td>Chest (in)</td>
+        <td>29-31</td>
+        <td>32-34</td>
+        <td>35-37</td>
+        <td>38-40</td>
+        <td>41-43</td>
+         <td>44-46</td>
+      </tr>
+     <tr>
+      <td>Waist(in)</td>
+      <td>25-27</td>
+      <td>28-30</td>
+      <td>31-33</td>
+      <td>34-36</td>
+      <td>37-39</td>
+      <td>40-42</td>
+    </tr>
+    <tr>
+      <td>Chest(cm)</td>
+      <td>74-79</td>
+      <td>81-86</td>
+      <td>89-94</td>
+      <td>97-102</td>
+      <td>104-109</td>
+      <td>112-117</td>
+    </tr>
+    <tr>
+      <td>Waist(cm)</td>
+      <td>64-69</td>
+      <td>71-76</td>
+      <td>79-84</td>
+      <td>89-91</td>
+      <td>94-99</td>
+      <td>102-107</td>
+    </tr>
+    <tr>
+      <td>EU size</td>
+      <td>34-36</td>
+      <td>38-40</td>
+      <td>40-42</td>
+      <td>42-44</td>
+      <td>46</td>
+      <td>48</td>
+    </tr>
+  </table>
 </div>
 
-  <!--chechout form-->
-  <div class="row">
-    <div class="col-75">
-      <div class="container">
-        <form action="/action_page.php">
   
-          <div class="row">
-            <div class="col-50">
-              <h3>Billing Address</h3>
-              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-              <label for="email"><i class="fa fa-envelope"></i> Email</label>
-              <input type="text" id="email" name="email" placeholder="john@example.com">
-              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-              <label for="city"><i class="fa fa-institution"></i> City</label>
-              <input type="text" id="city" name="city" placeholder="New York">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="state">State</label>
-                  <input type="text" id="state" name="state" placeholder="NY">
-                </div>
-                <div class="col-50">
-                  <label for="zip">Zip</label>
-                  <input type="text" id="zip" name="zip" placeholder="10001">
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-50">
-              <h3>Payment</h3>
-              <label for="fname">Accepted Cards</label>
-              <div class="icon-container">
-                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                <i class="fa fa-cc-discover" style="color:orange;"></i>
-              </div>
-              <label for="cname">Name on Card</label>
-              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-              <label for="ccnum">Credit card number</label>
-              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-              <label for="expmonth">Exp Month</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="September">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="expyear">Exp Year</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="2018">
-                </div>
-                <div class="col-50">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="352">
-                </div>
-              </div>
-            </div>
-  
-          </div>
-          <label>
-            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-          </label>
-          <input type="submit" value="Continue " class="btn">
-        </form>
-      </div>
-    </div>
-  
-    <div class="col-25">
-      <div class="container">
-        <h4>Cart
-          <span class="price" style="color:black">
-            <i class="fa fa-shopping-cart"></i>
-            <b>4</b>
-          </span>
-        </h4>
-        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-        <hr>
-        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-      </div>
-    </div>
-  </div>
+ 
+</div>
+
+</div>
+
+ 
   
 <script src="natty.js"></script>
 

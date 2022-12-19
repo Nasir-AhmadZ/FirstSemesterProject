@@ -102,7 +102,7 @@ function quantity(x)
 document.getElementById("des1").innerHTML= "7ft Decorated Tree Red & Gold Christmas Tree.";
 document.getElementById("des2").innerHTML= "The Halfords Snow Shovel, with a height of 82cm.";
 document.getElementById("des3").innerHTML= "Pink Sequin Embellished Christmas Puddings Jumper";
-document.getElementById("des4").innerHTML= "";
+document.getElementById("des4").innerHTML= "Sony PlayStation 5";
 
 //calculates the end total
 function total(){
