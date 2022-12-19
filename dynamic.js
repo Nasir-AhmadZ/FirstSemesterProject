@@ -10,72 +10,113 @@ function w3_open() {
     document.getElementById("mySidebar").style.display = "none";
   }
 
-function total(x , y, z, w)
-{
-   return x + y + z + w;
-}
 
-//this is for quantity adding  
+//this is for quantity adding  currently only works for alerts
 function quantity(x)
 {
-    var i, sum_1 = 0, Quantity = 5; //input for quantity needed
-    if (Quantity > 1)
+    let i;
+    var sum_1 = 0, sum_2 = 0, sum_3 = 0, sum_4 = 0;
+    if(x == 250)
     {
-        for (i = 0;i < Quantity;i++)
+        //var treeQuantity = 0;
+        var treeQuantity = document.getElementById("Q1").value;
+        if (treeQuantity > 1)
         {
-            sum_1 += x;
+            for (i = 0;i < treeQuantity;i++)
+            {
+                sum_1 += x;
+            }
+            document.getElementById("item1").innerHTML="$"+" "+ sum_1;
+            return sum_1;
         }
-        return sum_1;
+        else if(treeQuantity == 0)
+        {
+            document.getElementById("item1").innerHTML= "$"+" "+0;
+        }
+        else
+        {
+            document.getElementById("item1").innerHTML= "$"+" "+x;
+        }
     }
-    else
+    else if(x == 7)
     {
-        return x;
+        var shovelQuantity = document.getElementById("Q2").value;
+        if (shovelQuantity > 1)
+        {
+            for (i = 0;i < shovelQuantity;i++)
+            {
+                sum_2 += x;
+            }
+            document.getElementById("item2").innerHTML= "$"+" "+sum_2;  
+            return sum_2;
+        }
+        else if(shovelQuantity == 0)
+        {
+            document.getElementById("item2").innerHTML= "$"+" "+0;
+        }
+        else
+        {
+            document.getElementById("item2").innerHTML= "$"+" "+x;
+        }
     }
+    else if(x == 34)
+    {
+        var PS5Quantity = document.getElementById("Q3").value;
+        if (PS5Quantity > 1)
+        {
+            for (i = 0;i < PS5Quantity;i++)
+            {
+                sum_3 += x;
+            }
+            document.getElementById("item3").innerHTML= "$"+" "+sum_3;
+            return sum_3;
+        }
+        else if(PS5Quantity == 0)
+        {
+            document.getElementById("item3").innerHTML= "$"+" "+0;
+        }
+        else
+        {
+            document.getElementById("item3").innerHTML= "$"+" "+x;
+        }
+    }
+    else if(x == 850)
+    {
+        var jumperQuantity = document.getElementById("Q4").value;
+        if (jumperQuantity > 1)
+        {
+            for (i = 0;i < jumperQuantity;i++)
+            {
+                sum_4 += x;
+            }
+            document.getElementById("item4").innerHTML= "$"+" "+sum_4;
+            return sum_4;
+        }
+        else if(jumperQuantity == 0)
+        {
+            document.getElementById("item4").innerHTML= "$"+" "+0;
+        }
+        else
+        {
+            document.getElementById("item4").innerHTML= "$"+" "+x;
+        }
+    }
+    //document.getElementById("total").innerHTML= "$"+" "+parseInt(sum_1+sum_2+sum_3+sum_4);
 }
-
-//change money symbol and enter prices
-document.getElementById("total").innerHTML= "TOTAL:"+"$"+" "+total(quantity(250.00),quantity(76),quantity(54),quantity(67));
-function switch1(tree)
-{
-    const items=['tree', 'jumper', 'shovel', 'PS5'];
-    switch (tree)
-    {
-        case tree:
-           return 250;
-        break;
-        case 'jumper':
-            document.getElementById("des2").innerHTML= "$";
-            document.getElementById("item2").innerHTML= "$"+" "+quantity(76);
-        break;
-        case 'shovel':
-            document.getElementById("des3").innerHTML= "$";
-            document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
-        break;
-        case 'PS5':
-            document.getElementById("des4").innerHTML= "";
-            document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
-        break;
-    }
-}
-
-function if1(y)
-{
-    if (y == 1)
-    {
-       return "item1";
-    }
-    else if (y ==2)
-    {
-        document.getElementById("des2").innerHTML= "$";
-        document.getElementById("item2").innerHTML= "$"+" "+quantity(76);
-    }
-}
-
-document.getElementById("des1").innerHTML= "$";//Add product desription here
-document.getElementById("item1").innerHTML= "$"+" "+quantity(250);
-document.getElementById("des2").innerHTML= "$";
-document.getElementById("item2").innerHTML= "$"+" "+quantity(76);
-document.getElementById("des3").innerHTML= "$";
-document.getElementById("item3").innerHTML= "$"+" "+quantity(54);
+document.getElementById("des1").innerHTML= "7ft Decorated Tree Red & Gold Christmas Tree.";//Add product desription here
+document.getElementById("des2").innerHTML= "The Halfords Snow Shovel, with a height of 82cm.";
+document.getElementById("des3").innerHTML= "Pink Sequin Embellished Christmas Puddings Jumper";
 document.getElementById("des4").innerHTML= "";
-document.getElementById("item4").innerHTML= "$"+" "+quantity(67);
+
+function total(){
+    var Total = (document.getElementById("Q1").value*250)+(document.getElementById("Q2").value*7)+(document.getElementById("Q3").value*34)+
+    (document.getElementById("Q4").value*850);
+    document.getElementById("total").innerHTML="$"+" "+Total;
+}
+
+
+
+
+
+
+
