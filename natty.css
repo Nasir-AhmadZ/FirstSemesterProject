@@ -6,7 +6,17 @@ button{
    border-radius: 25px;
 }
 
+#jumperslide{
+  display: flex;
+  max-width: 60%;
+}
+#part{
 
+display: flex;
+}
+#green{
+  background-color: #45a049;
+}
 * {
   box-sizing: border-box;
 }
@@ -181,4 +191,11 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+th,td{
+  padding: 10px;
+  
+}
+table,th,td{
+  border:1px solid black
 }
