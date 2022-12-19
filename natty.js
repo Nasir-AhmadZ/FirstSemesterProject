@@ -28,7 +28,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-//button action
-function myButton(){
-  document.getElementById("cart").innerHTML="add jumper to cart";
+
+function myFunction() {
+  var x = document.getElementById("sizetable");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
