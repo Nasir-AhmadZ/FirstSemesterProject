@@ -192,10 +192,3 @@ span.price {
     margin-bottom: 20px;
   }
 }
-th,td{
-  padding: 10px;
-  
-}
-table,th,td{
-  border:1px solid black
-}
