@@ -11,14 +11,13 @@ function w3_open() {
   }
 
 
-//this is for quantity adding  currently only works for alerts
+//this is for finding total price for each product
 function quantity(x)
 {
     let i;
     var sum_1 = 0, sum_2 = 0, sum_3 = 0, sum_4 = 0;
     if(x == 250)
     {
-        //var treeQuantity = 0;
         var treeQuantity = document.getElementById("Q1").value;
         if (treeQuantity > 1)
         {
@@ -27,7 +26,6 @@ function quantity(x)
                 sum_1 += x;
             }
             document.getElementById("item1").innerHTML="$"+" "+ sum_1;
-            return sum_1;
         }
         else if(treeQuantity == 0)
         {
@@ -48,7 +46,6 @@ function quantity(x)
                 sum_2 += x;
             }
             document.getElementById("item2").innerHTML= "$"+" "+sum_2;  
-            return sum_2;
         }
         else if(shovelQuantity == 0)
         {
@@ -69,7 +66,6 @@ function quantity(x)
                 sum_3 += x;
             }
             document.getElementById("item3").innerHTML= "$"+" "+sum_3;
-            return sum_3;
         }
         else if(PS5Quantity == 0)
         {
@@ -90,7 +86,6 @@ function quantity(x)
                 sum_4 += x;
             }
             document.getElementById("item4").innerHTML= "$"+" "+sum_4;
-            return sum_4;
         }
         else if(jumperQuantity == 0)
         {
@@ -101,13 +96,15 @@ function quantity(x)
             document.getElementById("item4").innerHTML= "$"+" "+x;
         }
     }
-    //document.getElementById("total").innerHTML= "$"+" "+parseInt(sum_1+sum_2+sum_3+sum_4);
 }
-document.getElementById("des1").innerHTML= "7ft Decorated Tree Red & Gold Christmas Tree.";//Add product desription here
+
+//product desriptions
+document.getElementById("des1").innerHTML= "7ft Decorated Tree Red & Gold Christmas Tree.";
 document.getElementById("des2").innerHTML= "The Halfords Snow Shovel, with a height of 82cm.";
 document.getElementById("des3").innerHTML= "Pink Sequin Embellished Christmas Puddings Jumper";
 document.getElementById("des4").innerHTML= "";
 
+//calculates the end total
 function total(){
     var Total = (document.getElementById("Q1").value*250)+(document.getElementById("Q2").value*7)+(document.getElementById("Q3").value*34)+
     (document.getElementById("Q4").value*850);
