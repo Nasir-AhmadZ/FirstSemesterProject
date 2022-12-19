@@ -37,16 +37,13 @@ a:active{
     color: darkblue;
     text-decoration: none;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 24aa29518e3ae6c6981e9b75c443d744ceaa2f46
+
+
 td{
     text-align: center;
     font-weight: bold;
 }
-<<<<<<< HEAD
-=======
+
 .top2{
     position:absolute;top:0;
     background-color: black;
@@ -54,8 +51,7 @@ td{
     height: 8%;
     line-height: 40px;
 }
-=======
->>>>>>> 24aa29518e3ae6c6981e9b75c443d744ceaa2f46
+
 .main-div{
     background-color: white;
     height: 100%;
@@ -69,10 +65,4 @@ td{
     line-height: 40px;
 }
 
-
-<<<<<<< HEAD
->>>>>>> ac6b4bccca7cb827c6692f09013764609108855e
-=======
-
->>>>>>> 24aa29518e3ae6c6981e9b75c443d744ceaa2f46
 
